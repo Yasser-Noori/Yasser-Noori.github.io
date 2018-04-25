@@ -2,6 +2,18 @@
 <html>
     <head>
         <title>Geometry Dictionary</title>
+        <script>
+      var txt = document.getElementById("1"),
+          img2 = document.getElementById("img2");
+
+      txt.onmouseover = function(){
+        img2.style.display = "block";
+      }
+
+      txt.onmouseout = function(){
+        img2.style.display = "none";
+      }
+        </script>
         <style>
 @import "compass/css3";
             
@@ -103,6 +115,13 @@ h1 {
 .rwd-table th, .rwd-table td:before {
     color: #ddd;
 }
+            
+#img2{
+    position: fixed;
+    right:0;
+    bottom:0;
+    display: none;
+}
         </style>
     </head>
     <body>
@@ -157,7 +176,7 @@ h1 {
             </tr>
             
             <tr>
-                <td data-th="Word">
+                <td id="1" data-th="Word">
                     Tetrahedron (ˌtetrəˈhēdrən) 
                 </td>
                 <td data-th="Type">
@@ -216,6 +235,7 @@ h1 {
                 </td>
             </tr>
         </table>
+        <img id="img2" src="https://ibb.co/mwXUPH" />
         <p>
             by Yasser Noori & Mohid Sohail
         </p>
