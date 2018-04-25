@@ -2,8 +2,10 @@
 <html>
     <head>
         <title>Geometry Dictionary</title>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
         <script>
+window.onload = function() {
+        window.focus();
+    
       var txt = document.getElementById("1"),
           img2 = document.getElementById("img2");
 
@@ -14,6 +16,7 @@
       txt.onmouseout = function(){
         img2.style.display = "none";
       }
+};
         </script>
         <style>
 @import "compass/css3";
